@@ -107,7 +107,7 @@ function paginaSiguiente(){
 
 async function consultarApi(){
     try {
-        const url = `${location.origin}/api/servicios`;
+        const url = '/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         moastrarServicios(servicios);
@@ -324,7 +324,7 @@ async function reservarCita(){
     try {
             //peticion hacia la api
 
-        const url = `${location.origin}/api/citas`;
+        const url = '/api/citas';
         
 
         const respuesta = await fetch(url, {
